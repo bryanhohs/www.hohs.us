@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content'
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { formatPublishDate } from '../../utils/formatPublishDate';
 
 const title = 'Blog';
 const description = 'Latest articles.';
@@ -15,6 +16,7 @@ allPosts = allPosts.sort((a, b) => new Date(b.data.publishDate).valueOf() - new 
     <h1>Blog</h1>
     {allPosts.map((post, index) => {
       const href = `/blog/${post.data.slug}`;
+      const publishDate = formatPublishDate(post.data.publishDate);
       return (
         <div>
           { index !== 0 && <hr /> }
@@ -24,7 +26,7 @@ allPosts = allPosts.sort((a, b) => new Date(b.data.publishDate).valueOf() - new 
             </h2>
             <p>{post.data.description}</p>
             <div class="post-item-footer">
-              <span class="post-item-date">— {post.data.publishDate}</span>
+              <span class="post-item-date">— {publishDate}</span>
             </div>
           </div>
         </div>
