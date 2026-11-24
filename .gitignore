@@ -1,3 +1,5 @@
+.gitignore
+
 # build output
 dist/
 .output/
@@ -24,3 +26,11 @@ pnpm-debug.log*
 
 # Local Netlify folder
 .netlify
+
+# 
+.agents/
+.gemini/
+.vscode/
+
+.mcp.json
+.npmrc
