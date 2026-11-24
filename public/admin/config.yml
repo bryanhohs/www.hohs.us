@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: bryanhohs/hohs.us 
+  repo: bryanhohs/www.hohs.us 
   branch: master
   site_domain: www.hohs.us
 
