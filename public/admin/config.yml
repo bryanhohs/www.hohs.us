@@ -1,0 +1,24 @@
+backend:
+  name: github
+  repo: bryanhohs/hohs.us 
+  branch: master
+  site_domain: www.hohs.us
+
+publish_mode: editorial_workflow
+search: true
+show_preview_links: false
+site_url: https://www.hohs.us
+media_folder: '/public/assets/uploads'
+public_folder: 'assets/uploads'
+
+collections:
+  - name: 'blog'
+    label: 'Blog'
+    folder: 'src/data/blog-posts'
+    create: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Slug', name: 'slug', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'text' }
+      - { label: 'Date', name: 'publishDate', widget: 'datetime' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
