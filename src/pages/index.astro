@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const title = 'hohs.us';
+const title = 'Bryan C. Hohs';
 const description = 'My personal website';
 const permalink = Astro.site.href;
 ---
@@ -9,8 +9,8 @@ const permalink = Astro.site.href;
 <BaseLayout title={title} description={description} permalink={permalink}>
   <div class="home-container">
     <div class="home-copy">
-      <h1>hohs.us</h1>
-      <p>Check out the docs on <a href="https://www.github.com/bryanhohs/www.hohs.us" target="_blank" rel="noopener">GitHub</a> to get started.</p>
+      <h1>Bryan C. Hohs</h1>
+      <p>Check out the source on <a href="https://www.github.com/bryanhohs/www.hohs.us" target="_blank" rel="noopener">GitHub</a> to get started.</p>
     </div>
   </div>
 </BaseLayout>
@@ -40,47 +40,9 @@ const permalink = Astro.site.href;
     font-size: 1.4em;
   }
 
-  .hero-image-container {
-    margin: 0 1em;
+  .home-copy {
+    flex: 0;
+    padding-bottom: 2em;
     text-align: center;
-  }
-
-  .hero-image-container picture {
-    display: block;
-    min-height: 250px;
-  }
-
-  .caption {
-    font-size: .8em;
-    font-style: italic;
-    text-align: left;
-  }
-
-  .hero-image {
-    width: 100%;
-    max-width: 550px;
-    margin-bottom: 1em;
-  }
-
-  @media (max-width: 1200px) {
-    p {
-      font-size: 1.2em;
-    }
-
-    .hero-image {
-      max-width: 400px;
-    }
-  }
-
-  @media (max-width: 800px) {
-    .home-container {
-      flex-direction: column;
-    }
-
-    .home-copy {
-      flex: 0;
-      padding-bottom: 2em;
-      text-align: center;
-    }
   }
 </style>
