@@ -39,10 +39,36 @@ const permalink = Astro.site.href;
   .home-copy p {
     font-size: 1.4em;
   }
-  
+
+  .hero-image-container {
+    margin: 0 1em;
+    text-align: center;
+  }
+
+  .hero-image-container picture {
+    display: block;
+    min-height: 250px;
+  }
+
+  .caption {
+    font-size: .8em;
+    font-style: italic;
+    text-align: left;
+  }
+
+  .hero-image {
+    width: 100%;
+    max-width: 550px;
+    margin-bottom: 1em;
+  }
+
   @media (max-width: 1200px) {
     p {
       font-size: 1.2em;
+    }
+
+    .hero-image {
+      max-width: 400px;
     }
   }
 
@@ -50,11 +76,11 @@ const permalink = Astro.site.href;
     .home-container {
       flex-direction: column;
     }
-  }
 
-  .home-copy {
-    flex: 0;
-    padding-bottom: 2em;
-    text-align: center;
+    .home-copy {
+      flex: 0;
+      padding-bottom: 2em;
+      text-align: center;
+    }
   }
 </style>
