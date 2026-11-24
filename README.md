@@ -1,9 +1,5 @@
 # [Astro](https://astro.build) Blog Template
 
-## 👉 Check out the ✨ [Live Demo](https://lovely-travesseiro-2f052e.netlify.app/) ✨
-
-## 👩‍🚀 Getting Started
-
 ## ✨ Features:
 
 - ✅ Astro 4.0
