@@ -16,6 +16,8 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+pnpm-lock.yaml
+
 
 # environment variables
 .env
@@ -26,11 +28,8 @@ pnpm-debug.log*
 
 # Local Netlify folder
 .netlify
-
-# 
 .agents/
 .gemini/
 .vscode/
-
 .mcp.json
 .npmrc
