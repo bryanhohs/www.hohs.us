@@ -1,20 +1,8 @@
 # [Astro](https://astro.build) Blog Template
 
-[![Screenshot](screenshot.png)](https://lovely-travesseiro-2f052e.netlify.app/)
-
 ## 👉 Check out the ✨ [Live Demo](https://lovely-travesseiro-2f052e.netlify.app/) ✨
 
 ## 👩‍🚀 Getting Started
-
-### Locally
-
-```
-npm init astro -- --template bryanhohs/www.hohs.us
-```
-
-### On StackBlitz
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/bryanhohs/www.hohs.us)
 
 ## ✨ Features:
 
@@ -36,7 +24,7 @@ Inside of your Astro project, you'll see the following folders and files:
 │   └── favicon.ico
 ├── src/
 │   ├── components/
-│   │   └── Tour.astro
+│   │   └── BaseHead.astro
 │   └── pages/
 │       └── index.astro
 └── package.json
