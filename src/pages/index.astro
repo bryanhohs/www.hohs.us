@@ -13,14 +13,12 @@ const permalink = Astro.site.href;
       <p>Check out the source on <a href="https://www.github.com/bryanhohs/www.hohs.us" target="_blank" rel="noopener">GitHub</a> to get started.</p>
     </div>
     <div class="hero-image-container">
-      <div class="hero-image-container-video">
         <iframe
           src="https://player.twitch.tv/?channel=bryanchohs&parent=www.hohs.us"
           height="360"
           width="550"
           allowfullscreen>
         </iframe>
-      </div>
     </div>
   </div>
 </BaseLayout>
@@ -53,9 +51,6 @@ const permalink = Astro.site.href;
   .hero-image-container {
     margin: 0 1em;
     text-align: center;
-  }
-
-  .hero-image-container-video {
     border: 0px;
     display: block;
     min-height: 250px;
