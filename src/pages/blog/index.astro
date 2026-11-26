@@ -22,7 +22,7 @@ allPosts = allPosts.sort((a, b) => new Date(b.data.publishDate).valueOf() - new 
           { index !== 0 && <hr /> }
           <div class="post-item">
             <h2>
-              <a href={href}>{post.data.title}</a>
+              <a href={href} target="_blank">{post.data.title}</a>
             </h2>
             <div class="post-item-footer">
               <span class="post-item-date">— {publishDate}</span>
