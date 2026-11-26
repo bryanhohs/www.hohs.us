@@ -15,7 +15,7 @@ allPosts = allPosts.sort((a, b) => new Date(b.data.publishDate).valueOf() - new 
   <div class="container">
     <h1>Blog</h1>
     {allPosts.map((post, index) => {
-      const href = `${post.data.urls}`;
+      const href = `${post.data.postURL}`;
       const publishDate = formatPublishDate(post.data.publishDate);
       return (
         <div>

@@ -18,5 +18,5 @@ collections:
     create: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'URL', name: 'urls', widget: 'string' }
+      - { label: 'URL', name: 'postURL', widget: 'string' }
       - { label: 'Date', name: 'publishDate', widget: 'datetime' }
